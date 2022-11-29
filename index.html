@@ -10,15 +10,24 @@
   <script defer src="main.js"></script>
   <script>
     window.onload = () => {
-      new FontStyle('h1', 'red', '100px');
-      new FontStyle('h2', 'blue', '50px');
+      const txt1 = new FontStyle('h1');
+      txt1.changeColor('hotpink');
+      txt1.changeSize('100px');
+
+      const box1 = new BoxStyle('div');
+      box1.changeWid('200px');
+      box1.changeHt('200px');
+      box1.changeBg('aqua');
+      box1.changeColor('white');
+      box1.changeSize('100px');
     }
   </script>
 </head>
 
 <body>
-  <h1 id="title1">text1</h1>
-  <h2 id="title2">text2</h2>
+  <h1>text1</h1>
+
+  <div>box</div>
 </body>
 
 </html>
