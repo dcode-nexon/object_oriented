@@ -10,24 +10,25 @@
   <script defer src="main.js"></script>
   <script>
     window.onload = () => {
-      const txt1 = new FontStyle('h1');
-      txt1.changeColor('hotpink');
-      txt1.changeSize('100px');
 
-      const box1 = new BoxStyle('div');
-      box1.changeWid('200px');
-      box1.changeHt('200px');
-      box1.changeBg('aqua');
-      box1.changeColor('white');
-      box1.changeSize('100px');
     }
   </script>
 </head>
 
 <body>
-  <h1>text1</h1>
+  <section id="tab">
+    <ul>
+      <li class="on"><a href="#">button1</a></li>
+      <li><a href="#">button2</a></li>
+      <li><a href="#">button3</a></li>
+    </ul>
 
-  <div>box</div>
+    <article>
+      <div class="on">TAB1</div>
+      <div>TAB2</div>
+      <div>TAB3</div>
+    </article>
+  </section>
 </body>
 
 </html>
